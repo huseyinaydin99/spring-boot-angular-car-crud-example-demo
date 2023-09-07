@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar rxjs_1 = require(\"rxjs\");\nvar buffer_1 = require(\"../../operator/buffer\");\nrxjs_1.Observable.prototype.buffer = buffer_1.buffer;\n//# sourceMappingURL=buffer.js.map","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

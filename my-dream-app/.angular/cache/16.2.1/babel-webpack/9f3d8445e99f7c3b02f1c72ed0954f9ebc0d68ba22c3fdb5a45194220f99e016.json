@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class CarListComponent {\n  constructor(carService) {\n    this.carService = carService;\n  }\n  ngOnInit() {\n    this.carService.getAll().subscribe(data => {\n      this.cars = data;\n    });\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

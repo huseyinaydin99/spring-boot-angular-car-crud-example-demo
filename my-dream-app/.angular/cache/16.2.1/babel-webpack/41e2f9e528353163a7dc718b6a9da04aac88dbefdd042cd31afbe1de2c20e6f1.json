@@ -1,0 +1,1 @@
+{"ast":null,"code":"// This exists to use reqwest for http requests by default\nmodule.exports = require('../reqwest');","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

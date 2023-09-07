@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar rxjs_1 = require(\"rxjs\");\nvar debounce_1 = require(\"../../operator/debounce\");\nrxjs_1.Observable.prototype.debounce = debounce_1.debounce;\n//# sourceMappingURL=debounce.js.map","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

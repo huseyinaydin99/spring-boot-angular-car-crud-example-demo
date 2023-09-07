@@ -1,0 +1,11 @@
+security:
+    oauth2:
+        client:
+            access-token-uri: https://dev-xpseprucg2nuppmn.us.auth0.com/oauth2/default/v1/token
+            user-authorization-uri: https://dev-xpseprucg2nuppmn.us.auth0.com/oauth2/default/v1/authorize
+            client-id: Zf0OQhAnYV2nGnvE9A9qOmDdI89WBD21
+            scope: huseyinaydin99@gmail.com
+        resource:
+            user-info-uri: https://dev-xpseprucg2nuppmn.us.auth0.com/oauth2/default/v1/userinfo
+            token-info-uri: https://dev-xpseprucg2nuppmn.us.auth0.com/oauth2/default/v1/introspect
+            prefer-token-info: false

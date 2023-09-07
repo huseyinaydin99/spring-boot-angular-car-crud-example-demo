@@ -1,0 +1,21 @@
+<div class="grid">
+  <div class="col">1</div>
+  <div class="col">2</div>
+  <div class="col">3</div>
+</div>
+
+<button class="btn btn-success" [routerLink]="['/car-add']">Yeni Araç Ekleme Sayfası</button>
+<div class="row">
+  <div *ngFor="let car of cars">
+    <div class="col-xs-12 col-md-6 col-lg-3">
+      <img src="/assets/images/car_test.png" width="295px" alt="Hollywood Sign on The Hill" />
+      <div>
+        <strong>Oluşturma tarihi: {{jstoday}}</strong>
+        <p>
+          Araç adı: {{car.name}}
+        </p>
+      </div>
+      <button class="btn btn-primary" [routerLink]="['/car-edit', car.id]">Düzenle</button>&nbsp;
+    </div>
+  </div>
+</div>

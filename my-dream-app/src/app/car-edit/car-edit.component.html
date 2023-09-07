@@ -1,0 +1,41 @@
+<!--
+<form #carForm="ngForm" (ngSubmit)="save(carForm.value)">
+    <h2>{{car.name ? 'Edit' : 'Add'}} Car</h2>
+    <input class="form-control" type="hidden" name="href" [(ngModel)]="car.href">
+    <input class="form-control" placeholder="Car Name" [(ngModel)]="car.name" required name="name" #name>
+    <button class="btn btn-primary" type="submit" [disabled]="!carForm.form.valid">Save</button>
+    <button class="btn btn-danger" (click)="remove(car.href)" *ngIf="car.href" type="button">Delete</button>
+    <a class="btn btn-warning" routerLink="/car-list">Cancel</a>
+    <div class="giphy">
+        <img src="/assets/images/car_test.png" width="290px" alt="{{car.name}}">
+    </div>
+</form>
+-->
+
+<div class="wrap">
+    <div class="card row" style="width: 25rem;">
+        <div class="card-header">
+            {{car.name ? 'Düzenle / Güncelle' : 'Kayıt Gir'}}
+        </div>
+        <div class="card-body col-xs-4">
+            <form #carForm="ngForm" (ngSubmit)="save(carForm.value)">
+                <div>
+                    <img src="/assets/images/car_test.png" width="355px" alt="{{car.name}}">
+                </div>
+                <input class="form-control" type="hidden" name="href" [(ngModel)]="car.href">
+                <label>Araç modeli:</label>
+                <input maxlength="20" class="form-control inputfield" placeholder="Araç modeli giriniz..." [(ngModel)]="car.name"
+                    required name="name" #name>
+
+                <button class="btn btn-primary" type="submit" [disabled]="!carForm.form.valid">Kaydet</button>&nbsp;
+                <button class="btn btn-danger" (click)="remove(car.href)" *ngIf="car.href"
+                    type="button">Sil</button>&nbsp;
+                <a class="btn btn-warning" routerLink="/car-list">İptal Et</a>&nbsp;
+                <input type="reset" class="btn btn-dark" value="Temizle" />
+            </form>
+        </div>
+        <div class="card-footer">
+            2 days ago
+        </div>
+    </div>
+</div>

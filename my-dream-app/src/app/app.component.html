@@ -1,0 +1,11 @@
+<app-sidebar></app-sidebar>
+
+<div class="container">
+    <div *ngIf="!isAuthenticated">
+        <div>
+            <button color="accent" *ngIf="isAuthenticated" (click)="oktaAuth.logout()" [routerLink]="['/home']">Logout
+            </button>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
